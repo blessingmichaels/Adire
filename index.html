@@ -1,0 +1,465 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADIRE</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="animation/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="animation/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav
+        class="bg-teal-500 md:bg-teal-500 lg:bg-white lg:pt-10 md:pt-10 pt-5 lg:pb-10 md:pb-10 pb-5 p-10 md:p-20 lg:p-30 lg:flex items-center justify-between md:flex items-center">
+        <div class="logo">
+            <h1 class="heading-one">Adire<span>Medley</span></h1>
+        </div>
+        <ul class="lg:flex lg:gap-10 md:flex md:gap-5" id="menuList">
+            <li><a href="index.html" class="home" id="Home">Home</a></li>
+            <li><a href="" id="Products">Products</a></li>
+            <li><a href="" id="About">About</a></li>
+            <li><a href="" id="Socials">Contact</a></li>
+        </ul>
+        <ul class="lg:flex lg:gap-7 md:flex md:gap-5 gap-2" id="menuList">
+            <li><a href="login.html" class="login-border">Log in</a></li>
+            <li><a href="sign up.html" class="sign-up">Sign up</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenuList()"></i>
+        </div>
+    </nav>
+    <!-- <nav
+        class="bg-teal-500 md:bg-teal-500 lg:bg-white lg:pt-10 md:pt-10 pt-5 lg:pb-10 md:pb-10 pb-5 p-10 md:p-20 lg:p-30 lg:flex items-center justify-between md:flex items-center">
+        <div class="logo">
+            <h1 class="heading-one">Adire<span>Medley</span></h1>
+        </div>
+        <ul class="lg:flex lg:gap-10 md:flex md:gap-5 menu" id="menu">
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <ul class="lg:flex lg:gap-7 md:flex md:gap-5 gap-2">
+            <li><a href="login.html" class="login-border">Log in</a></li>
+            <li><a href="sign up.html" class="sign-up">Sign up</a></li>
+        </ul>
+        <div class="menu-bar" id="menu-bar">
+            <i class="fa-solid fa-bars fa-bar"></i>
+        </div>
+    </nav> -->
+    <!-- <nav class="bg-teal-500 md:bg-teal-500 lg:bg-white lg:pt-10 md:pt-10 pt-5 lg:pb-10 md:pb-10 pb-5 p-10 md:p-20 lg:p-30 lg:flex items-center justify-between md:flex items-center">
+        <div class="logo">
+            <h1 class="heading-one">Adire<span>Medley</span></h1>
+        </div>
+        <ul class="lg:flex lg:gap-10 md:flex md:gap-5 menu" id="menu">
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <ul class="lg:flex lg:gap-7 md:flex md:gap-5 gap-2" id="menuItems">
+            <li><a href="login.html" class="login-border">Log in</a></li>
+            <li><a href="sign up.html" class="sign-up">Sign up</a></li>
+        </ul>
+        <div class="menu-bar" id="menuBar">
+            <i class="fa-solid fa-bars fa-bar"></i>
+        </div>
+    </nav> -->
+
+    <section>
+        <div class="bg-img">
+            <div class="bg-image">
+                <h1
+                    class="heading-two text-white font-bold lg:text-7xl md:text-5xl text-2xl text-center pt-20 lg:pt-20 md:p-15 leading-loose lg:leading-loose md:leading-loose">
+                    Discover the <span class="span-two text-orange-500 font-bold">Vibrant</span> World <br>of <span
+                        class="span-two  text-orange-500 font-bold">Adire</span></h1>
+                <p class="p-one text-white text-center lg:text-2xl md:text-l lg:pt-5 md:pt-4 pt-5">Explore
+                    One-of-a-Kind hand-dyed fabrics available now at AdireMedley</p>
+                <div class="flex justify-center items-center py-10">
+                    <a href="#"
+                        class="sign-up text-white justify-center flex items-center font-bold py-4 bg-#FFA500 px-4 w-[15rem]">Explore
+                        now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-three my-10 md:my-15 lg:my-[10rem]">
+            <h1
+                class="heading-two text-black font-bold lg:text-6xl md:text-4xl text-2xl flex justify-center items-center">
+                How to use
+                Adire<span>Medley</span></h1>
+            <div class="container">
+                <div class=" lg:flex md:flex block justify-center items-center justify-between px-10 py-10  lg:px-20">
+                    <div class=" slider"><i class="icons fa-solid fa-bars"></i>
+                        <p class="place text-black py-5 font-bold text-3xl">Place Order</p>
+                        <p class="">Place an order by selecting<br>the product you want to<br>purchase</p>
+                    </div>
+                    <div class=" slider"> <i class="icons fa-solid fa-naira-sign"></i>
+                        <p class="place text-black py-5 font-bold text-3xl">Make Payment</p>
+                        <p>Choose your payment<br>method, and guidance will<br>be provided.</p>
+                    </div>
+                    <div class="  slider"><i class="icons fa-solid fa-truck"></i>
+                        <p class="place text-black py-5 font-bold text-3xl">Swift Delivery</p>
+                        <p>We offer swift delivery <br>services to get your <br>purchased products to you.</p>
+                    </div>
+                    <div class=""><i class="icons fa-solid fa-dollar-sign"></i></div>
+                    <div class=""><i class="icons fa-solid fa-truck-fast"></i></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-three my-10 md:my-15 lg:mt-[10rem]">
+            <h1
+                class="heading-two text-black font-bold lg:text-6xl md:text-4xl text-2xl flex justify-center items-center">
+                Our Adire Collections</h1>
+            <p
+                class="p-two text-center py-10 lg:px-10  md:px-[3rem] px-[.5rem] lg:text-base md:text-1lg text-1xsm justify-center items-center lg:leading-[2rem] md:leading-[2rem] leading-[1.8rem]">
+                At AdireMedley, we take pride in offering a diverse and unique range of Adire fabrics. Our collection
+                features a variety of intricate designs, vivid colors <br> and styles to suit different preferences and
+                fashion tastes. From bold geometric prints to delicate floral motifs, each fabric in our collection is
+                an<br> exquisite work of art created by skilled artisans who take great pride in their craft. </p>
+            <nav class="my-10 px-20">
+                <ul class="lg:flex md:flex flex lg:px-[5rem]  pb-[5rem] md:px-[3rem] px-0 justify-between items-center">
+                    <li><a href="#" class="links lg:text-xl font-light text-sm">all</a></li>
+                    <li><a href="#" class="links lg:text-xl font-light text-sm">Kampala</a></li>
+                    <li><a href="#" class="links lg:text-xl font-light text-sm">Batik</a></li>
+                    <li><a href="#" class="links lg:text-xl font-light text-sm">Cashmere</a></li>
+                    <li><a href="#" class="links lg:text-xl font-light text-sm">Plain and Pattern</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="image-container px-[2rem] lg:px-[5rem] md:px-[4rem] lg:flex md:flex justify-between gap-7">
+            <div>
+                <img src="img/Rectangle 8.png" alt="rectangle" width="400">
+                <p class="image-caption">Cotton Batik <span>₦7,000</span></p>
+            </div>
+            <div>
+                <img src="img/Rectangle 9.png" alt="rectangle" width="400">
+                <p class="image-caption">Polish Batik <span>₦5,000</span></p>
+            </div>
+            <div>
+                <img src="img/Rectangle 10.png" alt="rectangle" width="400">
+                <p class="image-caption three">Adire Plain and Pattern <span class="span-span">₦10,000</span></p>
+            </div>
+        </div>
+        <div class="image-container py-10 lg:flex md:flex justify-between gap-7 px-[2rem] lg:px-[5rem] md:px-[4rem]">
+            <div>
+                <img src="img/Rectangle 11.png" alt="rectangle" width="400">
+                <p class="image-caption p-p">Unisex Adire Top <span class="imgs">₦4,000</span></p>
+            </div>
+            <div>
+                <img src="img/Rectangle 12.png" alt="rectangle" width="400">
+                <p class="image-caption three">Batik Plain and Pattern <span class="imgs imgss">8,000</span></p>
+            </div>
+            <div>
+                <img src="img/Rectangle 13.png" alt="rectangle" width="400">
+                <p class="image-caption three">Cashmere African Top <span class="imgs">₦5,000</span></p>
+            </div>
+        </div>
+        <div class="flex justify-center items-center text-center my-[3rem]">
+            <button class="sign-up">See more Collecions</button>
+        </div>
+    </section>
+    <section>
+        <div class="lg:mt-[7rem] md:mt-[5rem] lg:px-[5rem] md:px-[4rem]">
+            <h1
+                class="heading-two text-black font-bold lg:text-6xl md:text-4xl text-2xl flex justify-center items-center">
+                What Adire<span>Medley</span> Offers</h1>
+            <p class="p-two lg:py-10 md:py-8 py-5 items-center text-center">At AdireMedley, we take pride in offering a
+                diverse and unique range of Adire fabrics. Our collection
+                features a variety of intricate designs, vivid colors <br> and styles to suit different preferences and
+                fashion tastes. From bold geometric prints to delicate floral motifs, each fabric in our collection is
+                an <br> exquisite work of art created by skilled artisans who take great pride in their craft. </p>
+            <!-- <div class="p-7 lg:flex md:flex gap-7">
+                <div class="justify-center items-center text-center flex flex-col bg-white p-5 rounded-xl div-three">
+                    <div class="bg-purple-200 p-7">
+                        <img src="img/icon-park_check-correct.png" alt="autheticate">
+                    </div>
+                    <p class="place text-lg font-bold pt-5">Authenticity</p>
+                    <p class="text-center text-#8C8F95 pt-2 p-three">Our fabrics come in different
+                        sizes, check <br> the dimensions of the fabric you are <br> buying to ensure it meets your
+                        needs.
+                        skilled artisans</p>
+                </div>
+                <div class="justify-center items-center text-center flex flex-col bg-white p-5 rounded-xl div-three">
+                    <div class="bg-yellow-100 p-7">
+                        <img src="img/geo_turf-size.png" alt="autheticate">
+                    </div>
+                    <p class="place text-lg font-bold pt-5">Sizing</p>
+                    <p class="text-center text-#8C8F95 pt-2 p-three">AdireMedley ships worldwide, and <br> delivery
+                        times may vary depending on <br> the location.
+                        skilled artisans</p>
+                </div>
+                <div class="justify-center items-center text-center flex flex-col bg-white p-5 rounded-xl div-three">
+                    <div class="bg-green-100 p-7">
+                        <img src="img/iconamoon_delivery-thin.png" alt="autheticate">
+                    </div>
+                    <p class="place font-bold pt-5">Shipping</p>
+                    <p class="text-center text-#8C8F95 pt-2 p-three">We are committed to providing authentic<br> Adire
+                        fabrics made using traditional <br> dyeing techniques by
+                        skilled artisans</p>
+                </div>
+            </div> -->
+            <div
+                class="lg:flex md:flex px-7 py-5 bg-white lg:justify-between md:justify-between lg:gap-0 md:gap-0 gap-5">
+                <div class="flex flex-col justify-center items-center text-center div-three p-4 rounded-xl">
+                    <img src="img/icon-park_check-correct.png" alt="care" class="bg-purple-200 p-7">
+                    <p class="font-bold pt-2">Authenticity</p>
+                    <p class="p-three">We are committed to providing authentic<br> Adire fabrics made using
+                        traditional<br>dyeing techniques by skilled artisans.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center p-5 rounded-xl div-three div-diff">
+                    <img src="img/geo_turf-size.png" alt="care" class="bg-yellow-100 p-7">
+                    <p class="font-bold pt-2">Sizing</p>
+                    <p class="p-three">Our fabrics come in different sizes, check <br> the dimensions of the fabric you
+                        are <br>buying to ensure it meets your needs.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center div-three p-5 rounded-xl">
+                    <img src="img/iconamoon_delivery-thin.png" alt="care" class="bg-green-100 p-7">
+                    <p class="font-bold pt-2">Shipping</p>
+                    <p class="p-three"><b>Adire</b>Medley ships worldwide, and <br> delivery times may vary depending on
+                        <br>the location.
+                    </p>
+                </div>
+
+            </div>
+            <div
+                class="lg:flex md:flex lg:px-8 lg:py-5 md:px-8 md:py-5 px-5 py-5 bg-white lg:justify-between md:justify-between lg:gap-0 md:gap-0 gap-3">
+                <div class="flex flex-col justify-center items-center text-center div-three p-4 rounded-xl">
+                    <img src="img/iconoir_healthcare.png" alt="care" class="bg-blue-100 p-7">
+                    <p class="font-bold pt-2">Care</p>
+                    <p class="p-three"><b>Adire</b>Medley fabrics need proper care to <br> maintain their shape, color,
+                        and
+                        texture <br>and that’s what
+                        we do best.</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center text-center p-5 rounded-xl bg-yellow-400 text-white div-diff">
+                    <img src="img/ph_key-return-bold.png" alt="care" class="bg-orange-100 p-7">
+                    <p class="font-bold pt-2">Returns and refunds</p>
+                    <p class="p-three text-white">We have a returns and refunds policy in <br> place to cater to any
+                        unforeseen issues <br>that may arise with a purchase</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center div-three p-5 rounded-xl">
+                    <img src="img/healthicons_call-centre-outline.png" alt="care" class="bg-purple-100 p-7">
+                    <p class="font-bold pt-2">Customer Care Service</p>
+                    <p class="p-three">We ensure that our customers receive <br> the best service possible through our
+                        <br>dedicated customer care team.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="my-[7rem] lg:px-[5rem] md:px-[4rem]">
+            <h1
+                class="heading-two text-black font-bold lg:text-6xl md:text-4xl text-2xl flex justify-center items-center">
+                Meet our Artisans</h1>
+            <p class="text-center py-10 p-three leading-loose">We work directly with local artisans who have inherited
+                the traditional Adire dyeing techniques from
+                their ancestors and mastered the art <br> over generations. </p>
+            <div class="lg:flex md:flex">
+                <div>
+                    <img src="img/Rectangle 26.png" alt="onifade" width="400">
+                    <p class="image-caption pl-5"><b>Onifade Grace</b><br>
+                    <p class="p-three pl-5">Adire Expertise</p>
+                </div>
+                <div>
+                    <img src="img/Rectangle 27.png" alt="onifade" width="400">
+                    <p class="image-caption pl-5 "><b>Akintunde Akindele</b><br>
+                    <p class="p-three pl-5">Adire Expertise</p>
+                </div>
+                <div>
+                    <img src="img/Rectangle 28.png" alt="onifade" width="400">
+                    <p class="image-caption pl-5"><b>Aremu Rose</b><br>
+                    <p class="p-three pl-5">Adire Expertise</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mt-[5rem] px-[5rem]">
+            <h1
+                class="heading-two text-black font-bold lg:text-6xl md:text-4xl text-2xl flex justify-center items-center">
+                Adire Magic</h1>
+            <p class="p-three text-center leading-loose pt-10">Take a journey through the making of <b>Adire</b>Medley’s
+                unique, hand-dyed Adire fabrics and experience the
+                artistry behind our products. Our fabrics are the result of a centuries-old process that has been passed
+                down through generations of Yoruba people in Nigeria.</p>
+        </div>
+        <div class="div-img mt-10 lg:flex md:flex">
+            <div class="pt-[5rem] pl-[3rem] pr-[1rem] pb-[2rem] flex flex-col gap-7">
+                <img src="img/Rectangle 30.png" alt="" width="400">
+                <img src="img/Rectangle 33.png" alt="" width="400">
+            </div>
+            <div class="pt-[3rem] pr-[3rem] flex flex-col gap-7">
+                <div class="lg:flex md:flex flex gap-3">
+                    <img src="img/Rectangle 35.png" alt="stylist" width="500" class="tailor">
+                    <img src="img/Rectangle 31.png" alt="stylist" width="300" class="tailor">
+                </div>
+                <div class="lg:flex md:flex flex gap-3">
+                    <img src="img/Rectangle 34.png" alt="" width="500" class="sis">
+                    <img src="img/Rectangle 36.png" alt="" width="300" class="sis-two">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mt-10 p-[5rem]">
+            <h1
+                class="heading-two text-black font-bold lg:text-6xl md:text-4xl text-2xl flex justify-center items-center">
+                Customers review</h1>
+            <p class="p-three text-center leading-loose pt-10">Here is what our amazing and loving customers have to say
+                about <b>Adire</b> Medley for always satisfying their taste for cultural prints and designs.</p>
+            <div class="lg:flex md:flex p-10 gap-8">
+                <div class="div-four rounded-xl">
+                    <div class="flex lg:gap-[12rem] md:gap-[10rem]  gap-5 lg:p-5 md:p-5 p-3">
+                        <div>
+                            <p class="font-bold">Opeoluwa Alabi
+                            <p class="p-three pt-3">Business Enthusiast</p>
+                            </p>
+                        </div>
+                        <img src="img/Ellipse 1.png" alt="">
+                    </div>
+                    <p class="leading-loose p-5 text-center text-sm p-four">"I stumbled upon AdireMedley’s website while
+                        searching for<br>authentic adire fabrics, and I am so
+                        glad I did. I purchased <br>a beautiful adire fabric and was amazed by the quality of <br> the
+                        product.
+                        The colors were vibrant, and the fabric was <br> soft and durable. I will definitely be a
+                        returning
+                        customer!"</p>
+                </div>
+                <div class="div-four rounded-xl">
+                    <div class="flex lg:gap-[12rem] md:gap-[10rem]  gap-5 lg:p-5 md:p-5 p-3">
+                        <div>
+                            <p class="font-bold">Olabimpe Olakanmi
+                            <p class="p-three pt-3">Digital Manager</p>
+                            </p>
+                        </div>
+                        <img src="img/Ellipse 2.png" alt="">
+                    </div>
+                    <p class="leading-loose p-5 text-center text-sm p-four">"AdireMedley's shipping was fast and
+                        efficient, and my <br>order arrived in perfect condition. The fabric was exactly as<br>described
+                        on the website and even more beautiful in <br>person. I highly recommend this company for anyone
+                        <br> looking to purchase high-quality adire fabrics."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="my-[5rem] px-[5rem]">
+            <div class="last-div lg:flex md:flex">
+                <nav class="lg:flex md:flex pt-[5rem] justify-between gap-[8rem] pb-[5rem]">
+                    <div class="logo">
+                        <h1 class="heading-one h-footer">Adire<span>Medley</span></h1>
+                        <span class="s-footer pt-4"><i>"where culture meets fashion"</i></span>
+                        <p class="p-three pt-4">Ayekale, ota-Efun, Osogbo.</p>
+                        <p class="p-three pt-4">Osun-state</p>
+                    </div>
+                    <div class="logo">
+                        <a href="#Home"><b>Home</b></a>
+                        <p class="pt-5">Adire collection</p>
+                        <p class="pt-5">Artisans</p>
+                        <p class="pt-5">Adire Magic</p>
+                        <p class="pt-5">Reviews</p>
+                    </div>
+                    <div class="logo">
+                        <a href="#About"><b>About</b></a>
+                        <p class="pt-5">Authenticity</p>
+                        <p class="pt-5">Care</p>
+                        <p class="pt-5">Returns and refunds</p>
+                        <p class="pt-5">Customer Care</p>
+                    </div>
+                    <div>
+                        <a href="#Products"><b>Produts</b></a>
+                        <p class="pt-5">Kampala</p>
+                        <p class="pt-5">Batik</p>
+                        <p class="pt-5">Cashmere</p>
+                        <p class="pt-5">Adire</p>
+                    </div>
+                    <div>
+                        <a href="#Socials"><b>Socials</b></a>
+                        <p class="pt-5"><a href="https://www.facebook.com/AdireMedley"> Facebook</a></p>
+                        <p class="pt-5"><a href="https://www.Instagram.com/AdireMedley"> Instagram</a></p>
+                        <p class="pt-5"><a href="https://www.Twitter.com/AdireMedley"> Twitter</a></p>
+                        <p class="pt-5"><a href="https://www.LinkedIn.com/AdireMedley"> LinkedIn</a></p>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- swiper-slide -->
+
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight = "0px") {
+                menuList.style.maxHeight = "300px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!-- <script>
+        document.getElementById("menu-bar").addEventListener("click", function() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+        });
+        </script> -->
+
+    <!-- <script>
+        // JavaScript to handle the toggling of the menu on smaller screens
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuBar = document.querySelector(".menubar");
+            var menu = document.querySelector(".menu");
+
+            if (menuBar && menu) {
+                menuBar.addEventListener("click", function () {
+                    menu.classList.toggle("active");
+                });
+            }
+        });
+
+    </script> -->
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If you need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

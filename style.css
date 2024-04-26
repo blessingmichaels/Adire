@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Poppins", sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    /* background-color: yellowgreen; */
+}
+
+.heading-one {
+    font-size: 3vw;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+span {
+    font-weight: 400;
+}
+.home {
+    color: orange;
+}
+
+.menu-icon i{
+    color: black;
+    font-size: 2rem;
+    display: none;
+}
+
+nav ul li {
+    list-style-type: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.login-border {
+    border-right: 3px solid orange;
+    padding: 1rem .5rem;
+    font-weight: 600;
+}
+
+.sign-up {
+    background-color: orange;
+    padding: 10px 2rem;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 2px 5px rgba(22, 22, 22, 0.35); */
+}
+
+
+
+.bg-image {
+    margin: 0px;
+    background-image: url(img/Group\ 17.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.heading-two {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.p-one {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.icons {
+    font-size: 4rem;
+    color: white;
+    background-color: orange;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slider {
+    color: #8C8F95;
+    text-align: center;
+}
+
+.place {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.p-two {
+    color: #8C8F95;
+    line-height: 4vh;
+}
+
+.links:hover {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 4rem;
+
+}
+
+  .image-caption span {
+    font-weight: bold;
+    padding-left: 13.5rem;
+  }
+
+  .span-span {
+    padding-left: 7rem !important;
+  }
+
+ 
+.imgs {
+    padding-left: 8rem !important;
+}
+
+.p-three {
+    color: #8C8F95;
+}
+.pl-5 {
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.div-three:hover {
+    background-color: #FFA500;
+    color: white;
+    /* color: #E5E7FD; */
+}
+
+.div-diff {
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.div-img {
+    background-color: #FFA500;
+}
+
+.tailor {
+    height: 60vh;
+}
+
+.sis {
+    height: 88.5vh;
+}
+
+.sis-two {
+    height: 70vh;
+}
+.p-four {
+    background-color: #FFA500;
+    color: white;
+}
+.div-four {
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.last-div {
+    border-top: 2px solid #8C8F95;
+}
+
+.h-footer {
+    font-size: 2vw;
+}
+
+.s-footer {
+    font-size: .8vw;
+    color: #8C8F95;
+}
+
+.last-link {
+    flex-direction: column;
+}
+
+@media (max-width:816px) {
+
+    .login-border {
+        border-right: 0px solid orange;
+       padding: 0rem;
+        font-weight: 600;
+    }
+
+    .sign-up {
+        background-color: orange;
+        padding: 5px 1rem;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 0 2px 5px rgba(22, 22, 22, 0.35);
+    }
+    
+  
+    
+}
+
+@media (max-width:600px) {
+
+    nav {
+        padding: 1rem;
+    }
+
+    nav ul {
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        padding: 1.5rem;
+    }
+
+    .menu-icon i {
+        
+        display: block;
+    }
+
+    #menuList {
+        transition: all 0.5s;
+    }
+
+    .links:hover {
+        background-color: #FFA500;
+        color: white;
+        padding: 10px 8px !important;
+    
+    }
+    .image-caption span {
+        font-weight: bold;
+        padding-left: 7rem;
+      }
+    
+      .span-span {
+        padding-left: 3rem !important;
+      }
+
+      .three {
+        font-size: small;
+      }
+      .imgs {
+        padding-left: 5rem !important;
+    }
+    .imgss {
+        padding-left: 3rem !important;
+    }
+}
+
+
+@media (max-width: 955px) and (min-width: 768px)  {
+
+    .image-caption span {
+        font-weight: bold;
+        padding-left: 5rem;
+      }
+    
+      .span-span {
+        padding-left: 2rem !important;
+      }
+
+      .three {
+        font-size: small;
+      }
+      .imgs {
+        padding-left: 1rem !important;
+    }
+    .imgss {
+        padding-left: 2rem !important;
+    }
+}
