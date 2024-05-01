@@ -19,24 +19,24 @@
 </head>
 
 <body>
-   <section>
-    <nav
-    class="bg-teal-500 md:bg-teal-500 lg:bg-white lg:pt-10 md:pt-10 pt-5 lg:pb-10 md:pb-10 pb-5 p-10 md:p-20 lg:p-30 lg:flex items-center justify-between md:flex items-center">
-    <div class="logo">
-        <h1 class="heading-one">Adire<span>Medley</span></h1>
-    </div>
-    <ul class="lg:flex lg:gap-10 md:flex md:gap-5">
-        <li><a href="index.html" class="home">Home</a></li>
-        <li><a href="product.html">Products</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-    </ul>
-    <ul class="lg:flex lg:gap-7 md:flex md:gap-5 gap-2">
-        <li><a href="login.html" class="login-border">Log in</a></li>
-        <li><a href="sign up.html" class="sign-up">Sign up</a></li>
-    </ul>
-</nav>
-   </section>
+    <!-- <section>
+        <nav
+            class="bg-teal-500 md:bg-teal-500 lg:bg-white lg:pt-10 md:pt-10 pt-5 lg:pb-10 md:pb-10 pb-5 p-10 md:p-20 lg:p-30 lg:flex items-center justify-between md:flex items-center">
+            <div class="logo">
+                <h1 class="heading-one">Adire<span>Medley</span></h1>
+            </div>
+            <ul class="lg:flex lg:gap-10 md:flex md:gap-5">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul class="lg:flex lg:gap-7 md:flex md:gap-5 gap-2">
+                <li><a href="login.html" class="login-border">Log in</a></li>
+                <li><a href="sign up.html" class="sign-up px-4 py-2 lg:px-[2rem] lg:py-[10px] md:px-[1.5rem] md:py-[10px] hover:text-black">Sign up</a></li>
+            </ul>
+        </nav>
+    </section> -->
     <!-- <section>
         <div class="hero-sect">
             <div class="hero-content">
@@ -57,34 +57,87 @@
         </div>
         
     </section> -->
-    
+
+    <section>
+        <nav
+            class="bg-teal-500 md:bg-teal-500 lg:bg-white lg:pt-10 md:pt-10 pt-5 lg:pb-10 md:pb-10 pb-5 p-10 md:p-20 lg:p-30 lg:flex items-center justify-between md:flex items-center">
+            <div class="logo">
+                <h1 class="heading-one" data-aos="zoom-in-right" data-aos-duration="600">Adire<span>Medley</span></h1>
+            </div>
+            <ul class="lg:flex lg:gap-10 md:flex md:gap-5" data-aos="zoom-in" data-aos-duration="900">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="product.html" class="hovs">Products</a></li>
+                <li><a href="" class="hovs">About</a></li>
+                <li><a href="" class="hovs">Contact</a></li>
+            </ul>
+            <ul class="lg:flex lg:gap-5 md:flex md:gap-4 gap-2" data-aos="zoom-in" data-aos-duration="900">
+                <li><a href="login.html" class="login-border hovs lg:px-4 py-4">Log in</a></li>
+                <li><a href="sign up.html"
+                        class="sign-up text-white px-4 py-2 lg:px-[2rem] lg:py-[10px] md:px-[1.5rem] md:py-[10px] hover:text-black"
+                        data-aos="zoom-in-left" data-aos-duration="1000">Sign up</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+
     <div class="bg-img">
         <div class="bg-image hero-sect">
             <div class="hero-content">
-                <div class="user-div w-[10rem] h-[10rem] bg-black rounded-[50%] flex items-center justify-center">
+                <div class="user-div w-[10rem] h-[10rem]  bg-black rounded-[50%] flex items-center justify-center"
+                    data-aos="zoom-in" data-aos-duration="900">
                     <i class="fa-regular fa-user user text-white"></i>
-                 </div>
+                </div>
                 <form action="">
-                    <div class="label">
+                    <!-- <div class="label">
                         <label for="email">
-                            <i class="fa-solid fa-envelope envelop" data-aos="zoom-in-right" data-aos-duration="100"></i>
-                            <input type="email" name="email" id="" placeholder="Email ID" class="input-log lg:w-[20rem]">
+                            <i class="fa-solid fa-envelope envelop"></i>
+                            <input type="email" name="email" id="" placeholder="Email ID"
+                                class="input-log lg:w-[20rem]">
                         </label>
                     </div>
                     <div class="label">
                         <label for="password">
                             <i class="fa-solid fa-lock envelop"></i>
-                            <input type="password" name="password" id="" placeholder="Password" class="input-log lg:w-[20rem]">
+                            <input type="password" name="password" id="" placeholder="Password"
+                                class="input-log lg:w-[20rem]">
+                        </label>
+                    </div> -->
+                    <!-- <div class="label flex justify-between  font-light Remember-Password">
+                        <label for="checkbox" class="text-white pt-[2rem] Remember">
+                            <input type="checkbox" class="lg:w-[1rem] lg:h-[1rem] w-[.5rem] h:-[.5rem]">
+                            Remember me
+                        </label>
+                        <a href="#" class="text-white pt-[2rem] font-light Remember">Forgot Password?</a>
+                    </div> -->
+
+
+                    <div class="label flex items-center">
+                        <label for="email" class="flex items-center">
+                            <i class="fa-solid fa-envelope envelop mr-2"></i>
+                            <input type="email" name="email" id="email" placeholder="Email ID"
+                                class="input-log lg:w-[20rem]">
                         </label>
                     </div>
-                    <div class="label flex justify-between  font-light">
-                       <label for="checkbox" class="text-white pt-[2rem]">
-                        <input type="checkbox" class="w-[1rem] h-[1rem]">
-                        Remember me
-                       </label>
-                       <a href="#" class="text-white pt-[2rem] font-light">Forgot Password?</a>
+                    <div class="label flex items-center">
+                        <label for="password" class="flex items-center">
+                            <i class="fa-solid fa-lock envelop mr-2"></i>
+                            <input type="password" name="password" id="password" placeholder="Password"
+                                class="input-log lg:w-[20rem]">
+                        </label>
                     </div>
-                    <div class="mt-10 bg-black text-white h-[3rem] flex justify-center items-center rounded-[5px]">
+
+
+                    <div class="label flex justify-between items-center text-white font-light Remember-Password">
+                        <label for="checkbox" class="pt-4 lg:pt-0">
+                            <input type="checkbox" class="form-checkbox lg:w-5 lg:h-5 w-4 h-4 mr-2">
+                            <span class="lg:text-base text-sm">Remember me</span>
+                        </label>
+                        <a href="#" class="pt-4 lg:pt-0 text-sm">Forgot Password?</a>
+                    </div>
+
+                    <div class="mt-10 bg-black text-white h-[3rem] flex justify-center items-center rounded-[5px]"
+                        data-aos="zoom-in" data-aos-duration="900">
                         <a href="login.html">LOGIN</a>
                     </div>
                 </form>
@@ -92,46 +145,44 @@
         </div>
     </div>
 
-    <section>
-        <div class="my-[5rem] px-[5rem]">
-            <div class="last-div lg:flex md:flex">
-                <nav class="lg:flex md:flex pt-[5rem] justify-between gap-[8rem] pb-[5rem]">
-                    <div class="logo">
-                        <h1 class="heading-one h-footer">Adire<span>Medley</span></h1>
-                        <span class="s-footer pt-4"><i>"where culture meets fashion"</i></span>
-                        <p class="p-three pt-4">Ayekale, ota-Efun, Osogbo.</p>
-                        <p class="p-three pt-4">Osun-state</p>
-                    </div>
-                    <div class="logo">
-                        <a href="#Home"><b>Home</b></a>
-                        <p class="pt-5">Adire collection</p>
-                        <p class="pt-5">Artisans</p>
-                        <p class="pt-5">Adire Magic</p>
-                        <p class="pt-5">Reviews</p>
-                    </div>
-                    <div class="logo">
-                        <a href="#About"><b>About</b></a>
-                        <p class="pt-5">Authenticity</p>
-                        <p class="pt-5">Care</p>
-                        <p class="pt-5">Returns and refunds</p>
-                        <p class="pt-5">Customer Care</p>
-                    </div>
-                    <div>
-                        <a href="#Products"><b>Produts</b></a>
-                        <p class="pt-5">Kampala</p>
-                        <p class="pt-5">Batik</p>
-                        <p class="pt-5">Cashmere</p>
-                        <p class="pt-5">Adire</p>
-                    </div>
-                    <div>
-                        <a href="#Socials"><b>Socials</b></a>
-                        <p class="pt-5"><a href="https://www.facebook.com/AdireMedley"> Facebook</a></p>
-                        <p class="pt-5"><a href="https://www.Instagram.com/AdireMedley"> Instagram</a></p>
-                        <p class="pt-5"><a href="https://www.Twitter.com/AdireMedley"> Twitter</a></p>
-                        <p class="pt-5"><a href="https://www.LinkedIn.com/AdireMedley"> LinkedIn</a></p>
-                    </div>
-                </nav>
-            </div>
+    <section class="py-10">
+        <div class="container mx-auto">
+            <nav class="lg:flex flex-wrap md:flex justify-center lg:justify-between gap-8 lg:py-10">
+                <div class="text-center lg:text-left leading-loose">
+                    <h1 class="heading-one h-footer text-black">Adire<span>Medley</span></h1>
+                    <span class="s-footer text-gray block pt-4"><i>"where culture meets fashion"</i></span>
+                    <p class="p-three text-gray pt-4">Ayekale, ota-Efun, Osogbo.</p>
+                    <p class="p-three text-gray pt-4">Osun-state</p>
+                </div>
+                <div class="text-center lg:text-left leading-loose">
+                    <a href="#Home" class="block text-black mb-5 lg:mb-0 font-bold">Home</a>
+                    <a href="#Adire Collection" class="block text-black mb-5 lg:mb-0">Adire Collection</a>
+                    <a href="#Artisans" class="block text-black mb-5 lg:mb-0">Artisans</a>
+                    <a href="#Adire Magic" class="block text-black mb-5 lg:mb-0">Adire Magic</a>
+                    <a href="#Reviews" class="block text-black mb-5 lg:mb-0">Reviews</a>
+                </div>
+                <div class="text-center lg:text-left leading-loose">
+                    <a href="#About" class="block text-black mb-5 lg:mb-0 font-bold">About</a>
+                    <a href="#Authenticity" class="block text-black mb-5 lg:mb-0">Authenticity</a>
+                    <a href="#Care" class="block text-black mb-5 lg:mb-0">Care</a>
+                    <a href="#Returns and refunds" class="block text-black mb-5 lg:mb-0">Returns and refunds</a>
+                    <a href="#Customer Care" class="block text-black mb-5 lg:mb-0">Customer Care</a>
+                </div>
+                <div class="text-center lg:text-left leading-loose">
+                    <a href="#Products" class="block text-black mb-5 lg:mb-0 font-bold">Products</a>
+                    <a href="#Kampala" class="block text-black mb-5 lg:mb-0">Kampala</a>
+                    <a href="#Batik" class="block text-black mb-5 lg:mb-0">Batik</a>
+                    <a href="#Cashmere" class="block text-black mb-5 lg:mb-0">Cashmere</a>
+                    <a href="#Adire" class="block text-black mb-5 lg:mb-0">Adire</a>
+                </div>
+                <div class="text-center lg:text-left leading-loose">
+                    <a href="#Socials" class="block text-black mb-5 lg:mb-0 font-bold">Socials</a>
+                    <a href="https://www.facebook.com/AdireMedley" class="block text-black mb-5 lg:mb-0">Facebook</a>
+                    <a href="https://www.Instagram.com/AdireMedley" class="block text-black mb-5 lg:mb-0">Instagram</a>
+                    <a href="https://www.Twitter.com/AdireMedley" class="block text-black mb-5 lg:mb-0">Twitter</a>
+                    <a href="https://www.LinkedIn.com/AdireMedley" class="block text-black mb-5 lg:mb-0">LinkedIn</a>
+                </div>
+            </nav>
         </div>
     </section>
 

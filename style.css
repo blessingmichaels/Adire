@@ -20,7 +20,7 @@ body {
     text-align: center;
     transition: 0.15s ease-in-out;
     position: relative;
-    text-transform:initial;
+    text-transform: initial;
 }
 
 .menu li a::after {
@@ -34,7 +34,7 @@ body {
     transition: 0.15s ease-in-out;
 }
 
-.menu li a:hover:after  {
+.menu li a:hover:after {
     width: 100%;
 
 }
@@ -43,7 +43,8 @@ body {
     color: #FFA500;
 }
 
-.open-menu , .close-menu {
+.open-menu,
+.close-menu {
     position: absolute;
     color: black;
     cursor: pointer;
@@ -56,6 +57,7 @@ body {
     right: 20px;
     transform: translateY(-50%);
 }
+
 .close-menu {
     top: 20px;
     right: 20px;
@@ -179,14 +181,16 @@ nav ul li a {
 .slides::-webkit-scrollbar {
     display: none;
 }
+
 .slide-wrap {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     margin: 10% auto;
 }
 
-#backBtn, #nextBtn {
+#backBtn,
+#nextBtn {
     width: 50px;
     cursor: pointer;
     margin: 40px;
@@ -237,14 +241,16 @@ nav ul li a {
 .gallery-wrap {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     margin: 10% auto;
 }
 
-#backBtn, #nextBtn {
+#backBtn,
+#nextBtn {
     width: 50px;
     cursor: pointer;
     margin: 40px;
+    color: white;
 }
 
 .gallery div img:hover {
@@ -254,7 +260,9 @@ nav ul li a {
 
 }
 
-
+#btn-two {
+    color: black;
+}
 
 .place {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -429,7 +437,7 @@ input {
 
 
 .google-button {
-        padding: .7rem 8.8rem !important;
+    padding: .7rem 8.8rem !important;
 }
 
 .label-sign {
@@ -463,7 +471,7 @@ login {}
     position: relative;
     z-index: 1;
 }
- 
+
 .hero-sect::before {
     content: "";
     position: absolute;
@@ -518,12 +526,10 @@ login {}
 
 .envelop {
     color: white;
-   
-}
-
-products {
 
 }
+
+products {}
 
 .products-content {
     position: relative;
@@ -531,13 +537,13 @@ products {
 }
 
 .sect-two {
-        height: fit-content;
-    }
+    height: fit-content;
+}
 
 
 
 
-@media  (max-width:816px) {
+@media (max-width:816px) {
 
     .login-border {
         border-right: 0px solid orange;
@@ -574,20 +580,52 @@ products {
     .menu li {
         margin-top: 40px;
     }
+
     .menu li a {
         padding: 10px;
     }
 
-    .open-menu , .close-menu {
+    .open-menu,
+    .close-menu {
         display: block;
     }
-    #check:checked ~ .menu{right: 0;}
-     
 
+    #check:checked~.menu {
+        right: 0;
+    }
+
+    .gallery {
+        width: 400px;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    #backBtn,
+    #nextBtn {
+        width: 30px;
+        cursor: pointer;
+        margin: 20px;
+    }
 
 
 }
 
+@media  (min-width:601px)  and (max-width:700px) {
+    .user-div {
+        z-index: 1 !important;
+        position: absolute;
+        bottom: 26rem !important;
+        left: 6rem !important;
+        width: 8rem !important;
+        height: 8rem !important;
+        border-radius: 50% !important;
+    }
+
+    .Remember-Password {
+        gap: 1rem !important;
+        }
+    
+}
 
 
 
@@ -605,12 +643,37 @@ products {
         padding: 8px 1.5rem !important;
         font-size: 1vw !important;
     }
-    
-    
+
+
     .google-button {
-            padding: 10px 2rem !important;
-            font-size: .6vw !important;
+        padding: 10px 2rem !important;
+        font-size: .6vw !important;
     }
+
+
+    .gallery {
+        width: 300px;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    #backBtn,
+    #nextBtn {
+        width: 10px;
+        cursor: pointer;
+        margin: 5px;
+        color: white;
+    }
+
+    .Enthusiast {
+        gap:  5rem !important;
+        font-size: 1vw !important;
+    }
+
+    .Enthusiast-div {
+        padding: 1rem !important;
+    }
+
 }
 
 
@@ -669,6 +732,7 @@ products {
     .imgss {
         padding-left: 3rem !important;
     }
+
     .sign-button {
         padding: 8px 2.5rem !important;
         background-color: #FFA500;
@@ -681,17 +745,116 @@ products {
         padding: 8px 1.5rem !important;
         font-size: 1vw !important;
     }
-    
-    
+
+
     .google-button {
-            padding: 10px 2rem !important;
-            font-size: .6vw !important;
+        padding: 10px 2rem !important;
+        font-size: .6vw !important;
+    }
+
+
+    .gallery {
+        width: 300px;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    #backBtn,
+    #nextBtn {
+        width: 15px;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .Remember {
+        font-size: 1vw !important;
+    }
+
+
+    .section-form {
+        padding: 3rem !important;
+    }
+    
+    
+    .user-div {
+        z-index: 1 !important;
+        position: absolute;
+        bottom: 26rem !important;
+        left: 7rem !important;
+        width: 6rem !important;
+        height: 6rem !important;
+        border-radius: 50% !important;
+    }
+    
+    .user {
+        font-size: 3rem;
+    }
+
+    
+
+    .Remember-Password {
+    gap: 1rem !important;
+    }
+
+
+    .Enthusiast {
+        /* gap: 1rem !important; */
+        
     }
 
 
 
 
+
 }
+
+@media (min-width: 768px) {
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    ul li {
+        margin-right: 20px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    ul {
+        display: none;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* @media (max-width: 767px) {
+
+    #menuItems,
+    #userMenu {
+        display: none;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    #menuToggle {
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+} */
+
+
 
 @media (max-width: 1150px) and (min-width: 601px) {
     .sign-button {
@@ -706,11 +869,11 @@ products {
         padding: 10px 4rem !important;
         font-size: 1vw !important;
     }
-    
-    
+
+
     .google-button {
-            padding: 10px 3rem !important;
-            font-size: .6vw !important;
+        padding: 10px 3rem !important;
+        font-size: .6vw !important;
     }
 }
 
@@ -740,4 +903,23 @@ products {
     .imgss {
         padding-left: 2rem !important;
     }
+
+    
 }
+
+@media (max-width: 1150px) and (min-width: 768px) {
+    .gallery {
+        width: 600px;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    #backBtn,
+    #nextBtn {
+        width: 20px;
+        cursor: pointer;
+        margin: 10px;
+    }
+}
+
+
