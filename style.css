@@ -298,9 +298,7 @@ nav ul li a {
     color: #8C8F95;
 }
 
-.pl-5 {
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
-}
+
 
 .div-three:hover {
     background-color: #FFA500;
@@ -607,6 +605,17 @@ products {}
         margin: 20px;
     }
 
+    .tailor {
+        height: 30vh;
+    }
+
+    .sis {
+        height: 30vh;
+    }
+    
+    .sis-two {
+        height: 30vh;
+    }
 
 }
 
@@ -801,6 +810,22 @@ products {}
         /* gap: 1rem !important; */
         
     }
+
+    .tailor {
+        height: 15vh;
+    }
+
+    .sis {
+        height: 20vh;
+    }
+    
+    .sis-two {
+        height: 20vh;
+    }
+    
+    /* .cards {
+        overflow-x: hidden !important;
+    } */
 
 
 
