@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="animation/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
 </head>
 
@@ -118,7 +120,7 @@
         </nav>
     </header> -->
 
-    <header>
+    <!-- <header>
         <nav id="responsiveNav"
             class="bg-teal-500 md:bg-teal-500 lg:bg-white lg:py-10 md:py-10 py-5 px-10 md:p-20 lg:p-30 lg:flex items-center justify-between md:flex items-center">
             <div class="logo">
@@ -137,7 +139,47 @@
                         up</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+    <section>
+        <nav class="resp-nav lg:p-10 md:p-5 bg-white shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center">
+                <span class="text-2xl font-[Poppins] cursor-pointer">
+                    <h1 class="font-bold drop-shadow">Adire<span class="font-light">Medley</span></h1>
+                </span>
+                <span class="text-3xl cursor-pointer md:hidden mx-2 block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul
+                class="md:flex md:items-center lg:gap-[14rem] z-[-1] md:z-auto md:static hidden absolute bg-white w-full md:left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <div class="lg:flex">
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="index.html" class="text-xl hover:text-orange-400 duration-500">Home</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="product.html" class="text-xl hover:text-orange-400 duration-500">Products</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="index.html" class="text-xl hover:text-orange-400 duration-500">About</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#" class="text-xl hover:text-orange-400 duration-500">Contact</a>
+                    </li>
+                </div>
+                <div class="lg:flex items-center">
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="login.html"
+                            class="text-xl hover:text-orange-400 duration-500 pr-4 border-r-4 border-orange-400 ">Log
+                            in</a>
+                    </li>
+                    <button
+                        class="mx-4 bg-orange-400 text-white font-[Poppins] duration-500 px-6 py-2 hover:text-black rounded-md shadow">
+                        <a href="sign up.html">Sign up</a>
+                    </button>
+                </div>
+            </ul>
+        </nav>
+    </section>
 
     <section>
         <div class="bg-img">
@@ -163,16 +205,17 @@
                 data-aos="zoom-in" data-aos-duration="600">
                 How to use
                 Adire<span>Medley</span></h1>
-            <div class="gallery-wrap" data-aos="fade-up" data-aos-duration="600">
+            <div class="gallery-wrap flex lg:flex-row md:flex-col flex-col overflow-y-auto" data-aos="fade-up"
+                data-aos-duration="600">
                 <i class="fa-solid fa-backward-step" id="backButton"></i>
                 <div class="Gallery currency">
-                    <div>
+                    <div class="slides">
                         <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
                             <img src="img/Group 19.png" alt="product-one">
                             <h3 class="text-black font-bold text-lg">Place Order</h3>
                             <p class="p-card">Place an order by selecting<br>the product you want to<br>purchase</p>
                         </div>
-                        <div  style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                        <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
                             <img src="img/Group 22.png" alt="product-one">
                             <h3 class="text-black font-bold text-lg">Make Payment</h3>
                             <p class="p-card">Choose your payment<br>method, and guidance will<br>be provided.</p>
@@ -180,16 +223,17 @@
                         <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
                             <img src="img/Group 25.png" alt="product-one">
                             <h3 class="text-black font-bold text-lg">Swift Delivery</h3>
-                            <p class="p-card">We offer swift delivery <br>services to get your <br>purchased products to you.</p>
+                            <p class="p-card">We offer swift delivery <br>services to get your <br>purchased products to
+                                you.</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="slides">
                         <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
                             <img src="img/Group 19.png" alt="product-one">
                             <h3 class="text-black font-bold text-lg">Place Order</h3>
                             <p class="p-card">Place an order by selecting<br>the product you want to<br>purchase</p>
                         </div>
-                        <div  style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                        <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
                             <img src="img/Group 22.png" alt="product-one">
                             <h3 class="text-black font-bold text-lg">Make Payment</h3>
                             <p class="p-card">Choose your payment<br>method, and guidance will<br>be provided.</p>
@@ -197,16 +241,17 @@
                         <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
                             <img src="img/Group 25.png" alt="product-one">
                             <h3 class="text-black font-bold text-lg">Swift Delivery</h3>
-                            <p class="p-card">We offer swift delivery <br>services to get your <br>purchased products to you.</p>
+                            <p class="p-card">We offer swift delivery <br>services to get your <br>purchased products to
+                                you.</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="slides">
                         <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
                             <img src="img/Group 19.png" alt="product-one">
                             <h3 class="text-black font-bold text-lg">Place Order</h3>
                             <p class="p-card">Place an order by selecting<br>the product you want to<br>purchase</p>
                         </div>
-                        <div  style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                        <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
                             <img src="img/Group 22.png" alt="product-one">
                             <h3 class="text-black font-bold text-lg">Make Payment</h3>
                             <p class="p-card">Choose your payment<br>method, and guidance will<br>be provided.</p>
@@ -214,7 +259,8 @@
                         <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
                             <img src="img/Group 25.png" alt="product-one">
                             <h3 class="text-black font-bold text-lg">Swift Delivery</h3>
-                            <p class="p-card">We offer swift delivery <br>services to get your <br>purchased products to you.</p>
+                            <p class="p-card">We offer swift delivery <br>services to get your <br>purchased products to
+                                you.</p>
                         </div>
                     </div>
                 </div>
@@ -293,10 +339,6 @@
             <button class="sign-up bg-orange-500 hover:text-black text-white font-bold py-2 px-4 rounded-md">See more
                 Collections</button>
         </div>
-
-        <!-- <div class="flex justify-center items-center text-center my-[3rem]">
-            <button class="sign-up">See more Collecions</button>
-        </div> -->
     </section>
     <section>
         <div class="cards lg:mt-[7rem] md:mt-[5rem] lg:px-[5rem] md:px-[4rem] px-{2rem}">
@@ -606,28 +648,7 @@
 
     </section>
 
-    <br>
-    <br>
-    <!-- <nav class="resp-nav">
-        <ul class="navigation-bar">
-            <li class="LoGo"><h1>AdireMedley</h1></li>
-            <input type="checkbox" id="checked">
-            <span class="menu-butts">
-               <div>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">About</a></li>
-               </div>
-                <div>
-                    <li><a href="#">log in</a></li>
-                    <li><a href="#">sign up</a></li>
-                </div>
-                <label for="check" class="close-bar"><i class="fas fa-times"></i></label>
-            </span>
-            <label for="check" class="open-bar"><i class="fas fa-bars"></i></label>
-        </ul>
-    </nav> -->
+
 
 
 
@@ -662,33 +683,27 @@
     </script>
 
 
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
 
-    <!-- <script>
-    window.addEventListener('DOMContentLoaded', () => {
-        const responsiveNav = document.getElementById('responsiveNav');
-        const menuItems = document.getElementById('menuItems');
-        const userMenu = document.getElementById('userMenu');
-
-        function toggleMenu() {
-            if (window.innerWidth < 1024) {
-                menuItems.classList.add('hidden');
-                userMenu.classList.add('hidden');
+            if (e.name === 'menu') {
+                e.name = "close";
+                list.classList.add('top-[80px]');
+                list.classList.add('opacity-100');
             } else {
-                menuItems.classList.remove('hidden');
-                userMenu.classList.remove('hidden');
+                e.name = "menu";
+                list.classList.remove('top-[80px]');
+                list.classList.remove('opacity-100');
             }
+            // e.name === 'menu' ? (e.name = "close",list.classList.
+            //  add('top-[80px]') ,  list.classList.add('opacity-100')
+            // ) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
         }
-
-        toggleMenu(); // Call the function on page load
-
-        window.addEventListener('resize', () => {
-            toggleMenu(); // Call the function when window is resized
-        });
-    });
-
-</script> -->
+    </script>
 
 
+    <!-- 
     <script>
         let menuItems = document.getElementById("menuItems")
         menuItems.style.maxHeight = "0px";
@@ -702,44 +717,10 @@
             }
         }
 
-    </script>
-
-
-
-    <!-- <script>
-        document.getElementById("menu-bar").addEventListener("click", function() {
-            var menu = document.getElementById("menu");
-            menu.classList.toggle("hidden");
-        });
-        </script> -->
-
-    <!-- <script>
-        // JavaScript to handle the toggling of the menu on smaller screens
-        document.addEventListener("DOMContentLoaded", function () {
-            var menuBar = document.getElementById(".menubar");
-            var menu = document.getElementById(".menu");
-
-            if (menuBar && menu) {
-                menuBar.addEventListener("click", function () {
-                    menu.classList.toggle("active");
-                });
-            }
-        });
-
     </script> -->
 
-    <!-- <script>
-        var swiper = new Swiper('.swiper-container', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
 
-            // If you need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        });
-    </script> -->
+
 
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 
