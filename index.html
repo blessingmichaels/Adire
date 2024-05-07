@@ -47,7 +47,7 @@
     @keyframes bounce {
 
         0%,
-        
+
         100% {
             transform: translateY(0);
         }
@@ -93,15 +93,14 @@
     </nav> -->
 
 
-    <header>
+    <!-- <header>
         <nav class="px-[5rem] lg:py-[2rem]">
-            <div class="logo">
-                <h1 class="heading-one" data-aos="zoom-in-right" data-aos-duration="600">Adire<span>Medley</span>
-                </h1>
-            </div>
-            <ul class="nav-bar sidebar lg:flex md:flex justify-between items-center position-relative justify-center">
+            <ul class="nav-bar lg:flex md:flex justify-between items-center position-relative justify-center">
+                <li class="logo">
+                    <h1 class="heading-one" data-aos="zoom-in-right" data-aos-duration="600">Adire<span>Medley</span>
+                    </h1>
+                </li>
                 <input type="checkbox" id="check">
-                <li onclick=closeSideBar()> <a href="#"><i class="fa-solid fa-xmark fa-xl"></i></a></li>
                 <div class="menu lg:flex md:flex">
                     <li class="pl-[30px]"><a href="index.html" class="home" id="Home">Home</a></li>
                     <li class="pl-[30px]"><a href="product.html" id="Products">Products</a></li>
@@ -111,23 +110,34 @@
                 </div>
                 <div class="menu lg:flex lg:gap-7 md:flex md:gap-5 gap-2" id="menuList items-center justify-center">
                     <li class="pl-[30px]"><a href="login.html">Log in</a></li>
-                    <li class="pl-[30px]"><a href="sign up.html">Sign up</a></li>
+                    <li class="pl-[30px]"><a href="sign up.html" class="p">Sign up</a></li>
                     <label for="check" class="close-menu"><i class="fa-solid fa-times"></i></label>
                 </div>
+                <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
             </ul>
-            <ul>
-                    <li class="hideonmobile"> <a href="#">Home</a></li>
-                    <li class="hideonmobile"> <a href="#">products</a></li>
-                    <li class="hideonmobile"> <a href="#">About</a></li>
-                    <li class="hideonmobile"> <a href="#">Contact</a></li>
-                    <li class="hideonmobile"> <a href="#">Log in</a></li>
-                    <li class="hideonmobile"> <a href="#">Sign up</a></li>
-                <label for="check" class="menu-button" onclick=showSideBar()> <a href="#"><i
-                    class="fa-solid fa-bars"></i></a></label>
+        </nav>
+    </header> -->
+
+    <header>
+        <nav id="responsiveNav"
+            class="bg-teal-500 md:bg-teal-500 lg:bg-white lg:py-10 md:py-10 py-5 px-10 md:p-20 lg:p-30 lg:flex items-center justify-between md:flex items-center">
+            <div class="logo">
+                <h1 class="heading-one" data-aos="zoom-in" data-aos-duration="900">Adire<span>Medley</span></h1>
+            </div>
+            <ul id="menuItems" class="hidden lg:flex lg:gap-10 md:flex md:gap-5">
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="product.html" class="hovs">Products</a></li>
+                <li><a href="" class="hovs">About</a></li>
+                <li><a href="" class="hovs">Contact</a></li>
+            </ul>
+            <ul id="userMenu" class="hidden lg:flex lg:gap-7 md:flex md:gap-5 gap-2">
+                <li><a href="login.html" class="login-border hovs">Log in</a></li>
+                <li><a href="sign up.html"
+                        class="sign-up text-white px-4 py-2 lg:px-[2rem] lg:py-[10px] md:px-[1.5rem] md:py-[10px] hover:text-black">Sign
+                        up</a></li>
             </ul>
         </nav>
     </header>
-
 
     <section>
         <div class="bg-img">
@@ -154,77 +164,65 @@
                 How to use
                 Adire<span>Medley</span></h1>
             <div class="gallery-wrap" data-aos="fade-up" data-aos-duration="600">
-                <i class="fa-solid fa-backward-step" id="backBtn btn-two"></i>
-                <div class="Gallery">
-
-                    <!-- <div class="flex flex-col">
-                        <img src="img/Group 19.png" alt="product-one">
-                        <p class="place text-black py-5 font-bold text-3xl">Place Order</p>
-                        <p class="slider">Place an order by selecting<br>the product you want to<br>purchase</p>
-                    </div>
-
+                <i class="fa-solid fa-backward-step" id="backButton"></i>
+                <div class="Gallery currency">
                     <div>
-                        <img src="img/Group 22.png" alt="product-one">
-                        <p class="slider place text-black py-5 font-bold text-3xl">Make Payment</p>
-                        <p>Choose your payment<br>method, and guidance will<br>be provided.</p>
-                    </div>
-                    <div>
-                        <img src="img/Group 25.png" alt="product-one">
-                        <p class="slider place text-black py-5 font-bold text-3xl">Swift Delivery</p>
-                        <p>We offer swift delivery <br>services to get your <br>purchased products to you.</p>
-                    </div> -->
-
-                    <div>
-                        <img src="img/Group 19.png" alt="product-one">
-                        <img src="img/Group 22.png" alt="product-one">
-                        <img src="img/Group 25.png" alt="product-one">
+                        <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                            <img src="img/Group 19.png" alt="product-one">
+                            <h3 class="text-black font-bold text-lg">Place Order</h3>
+                            <p class="p-card">Place an order by selecting<br>the product you want to<br>purchase</p>
+                        </div>
+                        <div  style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                            <img src="img/Group 22.png" alt="product-one">
+                            <h3 class="text-black font-bold text-lg">Make Payment</h3>
+                            <p class="p-card">Choose your payment<br>method, and guidance will<br>be provided.</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                            <img src="img/Group 25.png" alt="product-one">
+                            <h3 class="text-black font-bold text-lg">Swift Delivery</h3>
+                            <p class="p-card">We offer swift delivery <br>services to get your <br>purchased products to you.</p>
+                        </div>
                     </div>
                     <div>
-                        <img src="img/Group 19.png" alt="product-one">
-                        <img src="img/Group 22.png" alt="product-one">
-                        <img src="img/Group 25.png" alt="product-one">
+                        <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                            <img src="img/Group 19.png" alt="product-one">
+                            <h3 class="text-black font-bold text-lg">Place Order</h3>
+                            <p class="p-card">Place an order by selecting<br>the product you want to<br>purchase</p>
+                        </div>
+                        <div  style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                            <img src="img/Group 22.png" alt="product-one">
+                            <h3 class="text-black font-bold text-lg">Make Payment</h3>
+                            <p class="p-card">Choose your payment<br>method, and guidance will<br>be provided.</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                            <img src="img/Group 25.png" alt="product-one">
+                            <h3 class="text-black font-bold text-lg">Swift Delivery</h3>
+                            <p class="p-card">We offer swift delivery <br>services to get your <br>purchased products to you.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                            <img src="img/Group 19.png" alt="product-one">
+                            <h3 class="text-black font-bold text-lg">Place Order</h3>
+                            <p class="p-card">Place an order by selecting<br>the product you want to<br>purchase</p>
+                        </div>
+                        <div  style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                            <img src="img/Group 22.png" alt="product-one">
+                            <h3 class="text-black font-bold text-lg">Make Payment</h3>
+                            <p class="p-card">Choose your payment<br>method, and guidance will<br>be provided.</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; text-align: center; align-items: center;">
+                            <img src="img/Group 25.png" alt="product-one">
+                            <h3 class="text-black font-bold text-lg">Swift Delivery</h3>
+                            <p class="p-card">We offer swift delivery <br>services to get your <br>purchased products to you.</p>
+                        </div>
                     </div>
                 </div>
-                <i class="fa-solid fa-forward-step" id="nextBtn btn-two"></i>
+                <i class="fa-solid fa-forward-step" id="nextButton"></i>
             </div>
-            <!-- <div class="container slide-wrap gallery-wrap">
-                <i class="fa-solid fa-backward-step" id="backBtn btn-two"></i>
-                <div
-                    class="slides Gallery lg:flex md:flex block justify-center items-center justify-between px-10 py-10  lg:px-20 lg:py-[5rem]">
-
-                    <div class=" slider" data-aos="zoom-in-right" data-aos-duration="600">
-                        <i class="icons fa-solid fa-bars"></i>
-                        
-                        <p class="place text-black py-5 font-bold text-3xl">Place Order</p>
-                        <p class="">Place an order by selecting<br>the product you want to<br>purchase</p>
-                    </div>
-                    <div class=" slider" data-aos="zoom-out" data-aos-duration="600"> <i
-                            class="icons fa-solid fa-naira-sign"></i>
-                        <p class="place text-black py-5 font-bold text-3xl">Make Payment</p>
-                        <p>Choose your payment<br>method, and guidance will<br>be provided.</p>
-                    </div>
-                    <div class="  slider" data-aos="zoom-in-left" data-aos-duration="600"><i
-                            class="icons fa-solid fa-truck"></i>
-                        <p class="place text-black py-5 font-bold text-3xl">Swift Delivery</p>
-                        <p>We offer swift delivery <br>services to get your <br>purchased products to you.</p>
-                    </div>
-                    <div class=" slider" data-aos="zoom-out" data-aos-duration="600"><i
-                            class="icons fa-solid fa-dollar-sign"></i>
-                        <p class="place text-black py-5 font-bold text-3xl">Make Payment</p>
-                        <p>Choose your payment<br>method, and guidance will<br>be provided.</p>
-                    </div>
-
-                    <div class=" slider" data-aos="zoom-out" data-aos-duration="600"><i
-                            class="icons fa-solid fa-truck-fast"></i>
-                        <p class="place text-black py-5 font-bold text-3xl">Swift Delivery</p>
-                        <p>We offer swift delivery <br>services to get your <br>purchased products to you.</p>
-                    </div>
-                </div>
-                <i class="fa-solid fa-forward-step" id="nextBtn btn-two"></i>
-
-            </div> -->
         </div>
     </section>
+
     <section>
         <div class="section-three my-10 md:my-15 lg:mt-[10rem] lg:px-0 md:-[5rem] px-[2rem]" data-aos="zoom-in"
             data-aos-duration="900">
@@ -243,19 +241,19 @@
                 <ul
                     class="lg:flex md:flex  flex lg:justify-between lg:px-20 md:px-10 px-0 pb-5 md:pb-0 justify-center items-center lg:gap-5 gap-3">
                     <li><button
-                            class="hover:bg-orange-500 bg-orange-500 lg:py-3 lg:px-10 py-3 px-3 btn lg:text-xl font-light text-sm rounded-md">all</button>
+                            class="hover:bg-orange-500 hover:text-white bg-orange-500 lg:py-3 lg:px-10 py-3 px-3 btn lg:text-xl font-light text-sm rounded-md">all</button>
                     </li>
                     <li><button
-                            class="hover:bg-orange-500 lg:py-3 lg:px-10 btn py-3 px-3 lg:text-xl font-light text-sm rounded-md">Kampala</button>
+                            class="hover:bg-orange-500 hover:text-white lg:py-3 lg:px-10 btn py-3 px-3 lg:text-xl font-light text-sm rounded-md">Kampala</button>
                     </li>
                     <li><button
-                            class="hover:bg-orange-500 lg:py-3 lg:px-10 btn py-3 px-3 lg:text-xl font-light text-sm rounded-md">Batik</button>
+                            class="hover:bg-orange-500 hover:text-white lg:py-3 lg:px-10 btn py-3 px-3 lg:text-xl font-light text-sm rounded-md">Batik</button>
                     </li>
                     <li><button
-                            class="hover:bg-orange-500 lg:py-3 lg:px-10 btn py-3 px-3 lg:text-xl font-light text-sm rounded-md">Cashmere</button>
+                            class="hover:bg-orange-500 hover:text-white lg:py-3 lg:px-10 btn py-3 px-3 lg:text-xl font-light text-sm rounded-md">Cashmere</button>
                     </li>
                     <li><button
-                            class="hover:bg-orange-500 py-3 px-10 btn lg:text-xl font-light text-sm rounded-md lg:block md:block hidden">Plain
+                            class="hover:bg-orange-500 hover:text-white py-3 px-10 btn lg:text-xl font-light text-sm rounded-md lg:block md:block hidden">Plain
                             and Pattern</button></li>
                 </ul>
 
@@ -608,44 +606,42 @@
 
     </section>
 
+    <br>
+    <br>
+    <!-- <nav class="resp-nav">
+        <ul class="navigation-bar">
+            <li class="LoGo"><h1>AdireMedley</h1></li>
+            <input type="checkbox" id="checked">
+            <span class="menu-butts">
+               <div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About</a></li>
+               </div>
+                <div>
+                    <li><a href="#">log in</a></li>
+                    <li><a href="#">sign up</a></li>
+                </div>
+                <label for="check" class="close-bar"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-bar"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav> -->
 
 
-    <!-- swiper-slide -->
 
 
 
-    <!-- <script>
-    function showSideBar(){
-        const sidebar= document.querySelector('.sidebar ')
-        sidebar.style.display='flex'
-    }
-
-    function closeSideBar(){
-        const sidebar= document.querySelector('.sidebar ')
-        sidebar.style.display='none'
-    }
- </script> -->
 
 
-
-    <script>
-        function showSideBar() {
-            const sidebar = document.querySelector('.sidebar ')
-            sidebar.style.display = 'flex'
-        }
-
-        function closeSideBar() {
-            const sidebar = document.querySelector('.sidebar ')
-            sidebar.style.display = 'none'
-        }
-    </script>
 
 
 
     <script>
         let scrollContainer = document.querySelector(".gallery");
-        let backBtn = document.getElementById("backBtn");
-        let nextBtn = document.getElementById("nextBtn");
+        let backBtn = document.getElementById("backButton");
+        let nextBtn = document.getElementById("nextButton");
 
         scrollContainer.addEventListener("wheel", (evt) => {
             evt.preventDefault();
@@ -668,18 +664,45 @@
 
 
     <!-- <script>
-        let menuList = document.getElementById("menuList")
-        menuList.style.maxHeight = "0px";
+    window.addEventListener('DOMContentLoaded', () => {
+        const responsiveNav = document.getElementById('responsiveNav');
+        const menuItems = document.getElementById('menuItems');
+        const userMenu = document.getElementById('userMenu');
 
         function toggleMenu() {
-            if (menuList.style.maxHeight = "0px") {
-                menuList.style.maxHeight = "300px";
-            }
-            else {
-                menuList.style.maxHeight = "0px";
+            if (window.innerWidth < 1024) {
+                menuItems.classList.add('hidden');
+                userMenu.classList.add('hidden');
+            } else {
+                menuItems.classList.remove('hidden');
+                userMenu.classList.remove('hidden');
             }
         }
-    </script> -->
+
+        toggleMenu(); // Call the function on page load
+
+        window.addEventListener('resize', () => {
+            toggleMenu(); // Call the function when window is resized
+        });
+    });
+
+</script> -->
+
+
+    <script>
+        let menuItems = document.getElementById("menuItems")
+        menuItems.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "300px";
+            }
+            else {
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
 
 
 
@@ -693,8 +716,8 @@
     <!-- <script>
         // JavaScript to handle the toggling of the menu on smaller screens
         document.addEventListener("DOMContentLoaded", function () {
-            var menuBar = document.querySelector(".menubar");
-            var menu = document.querySelector(".menu");
+            var menuBar = document.getElementById(".menubar");
+            var menu = document.getElementById(".menu");
 
             if (menuBar && menu) {
                 menuBar.addEventListener("click", function () {
