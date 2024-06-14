@@ -222,7 +222,7 @@ nav ul li a {
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    background-color: ;
+
 }
 
 
@@ -248,7 +248,8 @@ nav ul li a {
 
 .gallery div img {
     width: 100%;
-    filter: grayscale(100%);
+    filter: grayscale(0);
+    /* filter: grayscale(100%); */
     transition: transform 0.5s;
 }
 
@@ -704,7 +705,7 @@ products {}
 
 
 
-@media (max-width:816px) {
+/* @media (max-width:816px) {
 
     .login-border {
         border-right: 0px solid orange;
@@ -721,7 +722,7 @@ products {}
     }
 
 
-}
+} */
 
 
 @media (max-width:767px) {
@@ -785,6 +786,25 @@ products {}
         flex-direction: column !important;
     }
 
+    
+
+
+    .slide-slide {
+        width: 200px !important;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+   
+    /* .bg-image {
+    margin: 0px;
+    background-image: url(img/Group\ 17.png);
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+} */
 }
 
 @media (min-width:601px) and (max-width:700px) {
@@ -853,11 +873,12 @@ products {}
 
 }
 
-    @media (max-width:600px) {
-        nav {
-            padding: 1rem;
-        }
-/* 
+@media (max-width:600px) {
+    /* nav {
+        padding: 1rem;
+    } */
+
+    /* 
         nav ul {
             padding: 10px 30px;
             display: flex;
@@ -881,116 +902,116 @@ products {}
             transition: all 0.5s;
         } */
 
-        .links:hover {
-            background-color: #FFA500;
-            color: white;
-            padding: 10px 8px !important;
+    .links:hover {
+        background-color: #FFA500;
+        color: white;
+        padding: 10px 8px !important;
 
-        }
+    }
 
-        .image-caption span {
-            font-weight: bold;
-            padding-left: 7rem;
-        }
+    .image-caption span {
+        font-weight: bold;
+        padding-left: 7rem;
+    }
 
-        .span-span {
-            padding-left: 3rem !important;
-        }
+    .span-span {
+        padding-left: 3rem !important;
+    }
 
-        .three {
-            font-size: small;
-        }
+    .three {
+        font-size: small;
+    }
 
-        .imgs {
-            padding-left: 5rem !important;
-        }
+    .imgs {
+        padding-left: 5rem !important;
+    }
 
-        .imgss {
-            padding-left: 3rem !important;
-        }
+    .imgss {
+        padding-left: 3rem !important;
+    }
 
-        .sign-button {
-            padding: 8px 2.5rem !important;
-            background-color: #FFA500;
-            border-radius: 5px;
-            color: white !important;
-            font-size: 1vw !important;
-        }
+    .sign-button {
+        padding: 8px 2.5rem !important;
+        background-color: #FFA500;
+        border-radius: 5px;
+        color: white !important;
+        font-size: 1vw !important;
+    }
 
-        .face-button {
-            padding: 8px 1.5rem !important;
-            font-size: 1vw !important;
-        }
-
-
-        .google-button {
-            padding: 10px 2rem !important;
-            font-size: .6vw !important;
-        }
+    .face-button {
+        padding: 8px 1.5rem !important;
+        font-size: 1vw !important;
+    }
 
 
-        .gallery {
-            width: 300px;
-            display: flex;
-            overflow-x: scroll;
-        }
-
-        #backBtn,
-        #nextBtn {
-            width: 15px;
-            cursor: pointer;
-            margin: 5px;
-        }
-
-        .Remember {
-            font-size: 1vw !important;
-        }
+    .google-button {
+        padding: 10px 2rem !important;
+        font-size: .6vw !important;
+    }
 
 
-        .section-form {
-            padding: 3rem !important;
-        }
+    .gallery {
+        width: 300px;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    #backBtn,
+    #nextBtn {
+        width: 15px;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .Remember {
+        font-size: 1vw !important;
+    }
 
 
-        .user-div {
-            z-index: 1 !important;
-            position: absolute;
-            bottom: 26rem !important;
-            left: 7rem !important;
-            width: 6rem !important;
-            height: 6rem !important;
-            border-radius: 50% !important;
-        }
-
-        .user {
-            font-size: 3rem;
-        }
+    .section-form {
+        padding: 3rem !important;
+    }
 
 
+    .user-div {
+        z-index: 1 !important;
+        position: absolute;
+        bottom: 26rem !important;
+        left: 7rem !important;
+        width: 6rem !important;
+        height: 6rem !important;
+        border-radius: 50% !important;
+    }
 
-        .Remember-Password {
-            gap: 1rem !important;
-        }
+    .user {
+        font-size: 3rem;
+    }
 
 
-        .Enthusiast {
-            /* gap: 1rem !important; */
 
-        }
+    .Remember-Password {
+        gap: 1rem !important;
+    }
 
-        .tailor {
-            height: 15vh;
-        }
 
-        .sis {
-            height: 20vh;
-        }
+    .Enthusiast {
+        /* gap: 1rem !important; */
 
-        .sis-two {
-            height: 20vh;
-        }
+    }
 
-        /* .cards {
+    .tailor {
+        height: 15vh;
+    }
+
+    .sis {
+        height: 20vh;
+    }
+
+    .sis-two {
+        height: 20vh;
+    }
+
+    /* .cards {
         overflow-x: hidden !important;
     } */
 
@@ -998,21 +1019,21 @@ products {}
 
 
 
+}
+
+@media (min-width: 768px) {
+    .logo h1 {
+        font-size: 28px;
     }
 
-    @media (min-width: 768px) {
-        .logo h1 {
-            font-size: 28px;
-        }
-
-        ul li {
-            margin-right: 20px;
-        }
+    ul li {
+        margin-right: 20px;
     }
+}
 
 
 
-    /* @media (max-width: 767px) {
+/* @media (max-width: 767px) {
         ul {
             display: none;
             text-align: center;
@@ -1028,68 +1049,68 @@ products {}
 
 
 
-    @media (max-width: 1150px) and (min-width: 601px) {
-        .sign-button {
-            padding: 10px 5rem !important;
-            background-color: #FFA500;
-            border-radius: 5px;
-            color: white !important;
-            font-size: 1.5vw !important;
-        }
+@media (max-width: 1150px) and (min-width: 601px) {
+    .sign-button {
+        padding: 10px 5rem !important;
+        background-color: #FFA500;
+        border-radius: 5px;
+        color: white !important;
+        font-size: 1.5vw !important;
+    }
 
-        .face-button {
-            padding: 10px 4rem !important;
-            font-size: 1vw !important;
-        }
-
-
-        .google-button {
-            padding: 10px 3rem !important;
-            font-size: .6vw !important;
-        }
+    .face-button {
+        padding: 10px 4rem !important;
+        font-size: 1vw !important;
     }
 
 
+    .google-button {
+        padding: 10px 3rem !important;
+        font-size: .6vw !important;
+    }
+}
 
 
 
-    @media (max-width: 955px) and (min-width: 768px) {
-
-        .image-caption span {
-            font-weight: bold;
-            padding-left: 5rem;
-        }
-
-        .span-span {
-            padding-left: 2rem !important;
-        }
-
-        .three {
-            font-size: small;
-        }
-
-        .imgs {
-            padding-left: 1rem !important;
-        }
-
-        .imgss {
-            padding-left: 2rem !important;
-        }
 
 
+@media (max-width: 955px) and (min-width: 768px) {
+
+    .image-caption span {
+        font-weight: bold;
+        padding-left: 5rem;
     }
 
-    @media (max-width: 1150px) and (min-width: 768px) {
-        .gallery {
-            width: 600px;
-            display: flex;
-            overflow-x: scroll;
-        }
-
-        #backBtn,
-        #nextBtn {
-            width: 20px;
-            cursor: pointer;
-            margin: 10px;
-        }
+    .span-span {
+        padding-left: 2rem !important;
     }
+
+    .three {
+        font-size: small;
+    }
+
+    .imgs {
+        padding-left: 1rem !important;
+    }
+
+    .imgss {
+        padding-left: 2rem !important;
+    }
+
+
+}
+
+@media (max-width: 1150px) and (min-width: 768px) {
+    .gallery {
+        width: 600px;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    #backBtn,
+    #nextBtn {
+        width: 20px;
+        cursor: pointer;
+        margin: 10px;
+    }
+}
